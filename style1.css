@@ -1,0 +1,57 @@
+*{margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+.carousel{background:linear-gradient(to top right,#C90A6D,
+       #FF48A0 );
+margin-bottom:20px;}
+.categories{margin:0px 10px;}
+.cat{}
+.categories img{width:30%;}
+#cat-watch{background:linear-gradient(to right,#5E5AEC,
+       #3F9EFC );
+  border: none;
+  border-radius: 10px;
+}
+ 
+ #cat-bag{background:linear-gradient(to right,#5E5AEC,
+       #3F9EFC );
+   border: none;
+  border-radius: 10px;
+ }
+ #cat-shoes{background:linear-gradient(to right,#5E5AEC,
+       #3F9EFC );
+   border: none;
+  border-radius: 10px;
+ }
+ .button-3{background:linear-gradient(to right,#5E5AEC,
+       #3F9EFC );
+ color:white;
+   border: none;
+   padding: 5px 12px;
+   border-radius:5px ;
+ }
+  .button-2{background:linear-gradient(to bottom right,#C90A6D,
+       #FF48A0 );
+ color:white;
+   border: none;
+   padding: 5px 12px;
+   border-radius:5px ;
+ }
+.bag{width:200px;
+   padding-right: 40px;
+ }
+.x-box{}
+.headphone{} 
+.card-2{background:linear-gradient(to bottom right,#C90A6D,
+       #FF48A0 );
+  color:white;
+}
+.card-3{background:linear-gradient(to right,#5E5AEC,
+       #3F9EFC );
+  color:white;
+}
+.cat-name{margin:0 auto;}
+.collection{display:flex;
+  flex-wrap:wrap;
+} 
