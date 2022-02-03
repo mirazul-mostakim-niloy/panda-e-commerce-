@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{margin: 0;
+            padding: 0;
+            background-color:white;
+        }
+        h1{max-width: 320px;
+            margin: 0 auto;
+            text-align: center;
+            color:black;
+            padding: 8px;
+        }
+        .card{margin: 0 auto;
+            max-width:300px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: 0.3s;
+            font-size: 0;
+        }
+        .card:hover{box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+        .calc-head #result{
+            width: 285px;
+            height: 100px;
+            font-size: 2rem;
+            font-weight: 500;
+            text-align: right;
+            padding: 0 5px;
+            letter-spacing: 2px;
+        }
+        .calc-body .btn{
+            width: 75px;
+            height: 68px;
+            font-weight: 500;
+            font-size: 1.2rem;
+            background-color:#001E6C;
+            color: white;
+            border: none;
+            border: 1px solid white;
+        }
+        .btn:hover{
+            background-color:#035397;
+            color:white ;
+        }
+        @media only screen and (max-width: 600px) {
+            body {padding: 1%;
+            background-color:white
+            }
+            h1{max-width: 250px;}
+            
+        .card{max-width: 300px;
+            }
+            .calc-head #result{
+                width: 285px;
+                height:100px;
+                font-size:1.6rem;
+            }
+        .calc-body .btn{
+         width: 75px;
+         height: 68px;
+         font-weight: 500;
+         font-size: 1.2rem;
+         background-color:#001E6C;
+         color: white;
+            }
+        .btn:hover{
+        background-color:#035397;
+        color:white;
+        } 
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Calculator</h1>
+    <div class="card">
+      <form name="cal">
+        
+        <div class="calc-head">
+            <input type="text" id="result" readonly="" maxlength="10" name="display">
+        </div>
+
+        <div class="calc-body">
+
+         <div>
+      <input type="button" value="C" class="btn"onclick="cal.display.value ='' " >
+     <input type="button" value="%" class="btn"onclick="cal.display.value +='%' " >
+     <input type="button" value="DEL" class="btn"onclick="cal.display.value +='' " >
+     <input type="button" value="/" class="btn"onclick="cal.display.value +='/' " >
+            </div>
+            <div>
+    <input type="button" value="7" class="btn"onclick="cal.display.value +='7' " >
+     <input type="button" value="8" class="btn"onclick="cal.display.value +='8' " >
+     <input type="button" value="9" class="btn"onclick="cal.display.value +='9' " >
+      <input type="button" value="X" class="btn"onclick="cal.display.value +='*' " >
+            </div>
+            
+            <div>
+     <input type="button" value="4" class="btn" onclick="cal.display.value +='4' " >
+     <input type="button" value="5" class="btn"onclick="cal.display.value +='5' " >
+       <input type="button" value="6" class="btn"onclick="cal.display.value +='6' " >
+       <input type="button" value="-" class="btn"onclick="cal.display.value +='-' " >
+            </div>  
+
+            <div>
+     <input type="button" value="1" class="btn"onclick="cal.display.value +='1' " >
+     <input type="button" value="2" class="btn"onclick="cal.display.value +='2' " >
+    <input type="button" value="3" class="btn"onclick="cal.display.value +='3' " >
+    <input type="button" value="+" class="btn"onclick="cal.display.value +='+' " >
+            </div>
+            
+            <div>
+    <input type="button" value="00" class="btn"onclick="cal.display.value +='00' " >
+      <input type="button" value="0" class="btn"onclick="cal.display.value +='0' " >
+     <input type="button" value="." class="btn"onclick="cal.display.value +='.' " >
+    <input type="button" value="=" class="btn" onclick="cal.display.value=eval(cal.display.value)" style="background-color: #FFAA4C;">
+            </div>
+
+        </div>
+         </form>  
+    </div>
+
+</body>
+</html>
